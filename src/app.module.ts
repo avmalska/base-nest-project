@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { configValidationSchema } from './config.schema';
-import { PeixeModule } from './peixe/peixe.module';
+import { PinguimModule } from './pinguim/pinguim.module';
 
 @Module({
   imports: [
@@ -26,7 +26,7 @@ import { PeixeModule } from './peixe/peixe.module';
         };
       },
     }),
-    PeixeModule,
+    PinguimModule,
   ],
 })
 export class AppModule {}
